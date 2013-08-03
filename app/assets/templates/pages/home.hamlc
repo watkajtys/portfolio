@@ -1,2 +1,52 @@
 .container
-	
+	.content{"ng-switch" => "", :on => "positionData", :'ng-animate' => " 'animate' " }
+		.home{:'ng-switch-when' => "home" }
+			%h1 Matt Watkajtys
+			%h2 Web Engineer
+			%h2 Entrepreneur
+			%h2 Adventurer
+			%h2 Explorer
+			%hr
+			.control
+				%i{:class => "icon-double-angle-right icon-4x", :'ng-click' => "about()" }
+
+		.about{:'ng-switch-when' => "about"}
+			%h1 About! 
+			%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			%hr
+			.control
+				%i{:class => "icon-double-angle-left icon-4x", :'ng-click' => "home()" }
+				%i{:class => "icon-double-angle-right icon-4x", :'ng-click' => "portfolio()" }
+
+		.portfolio{:'ng-switch-when' => "portfolio"}
+			%h1 Portfolio
+			%p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			%hr
+			.control
+				%i{:class => "icon-double-angle-left icon-4x", :'ng-click' => "about()"}
+				%i{:class => "icon-double-angle-right icon-4x", :'ng-click' => "links()" }
+
+		.links{:'ng-switch-when' => "links"}
+			%a{:href => "https://github.com/watkajtys", :target => "_blank" }
+				%i{:class => "icon-github-sign"}
+			%a{:href => "https://twitter.com/mattwatkajtys", :target => "_blank" }	
+				%i{:class => "icon-twitter-sign"}
+			%a{:href => "http://www.linkedin.com/pub/matt-watkajtys/29/131/55b", :target => "_blank" }				
+				%i{:class => "icon-linkedin-sign"}
+
+	.footer
+		%button{:'ng-click' => "home()" } Home Button! 
+		%button{:'ng-click' => "about()" } About Button! 
+		%button{:'ng-click' => "portfolio()" } Portfolio Button! 
+		%button{:'ng-click' => "links()" } Links Button!
+ 

@@ -1,5 +1,81 @@
 .container {
-	background-color: blue;
 	width: 100%;
 	height: 100%;
+}
+
+.content{
+	height: 85%;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.home {
+	position: absolute;
+	background-color: #25567b;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+}
+
+.about {
+	position: absolute;
+	background-color: #257b4a;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+}
+
+.portfolio {
+	position: absolute;
+	background-color: #7b2556;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+}
+
+.links {
+	position: absolute;
+	background-color: orange;
+	height: 100%;
+	width: 100%;
+	clear: both;
+	display: inline-block;
+}
+
+.links i {
+	font-size: 14em;
+}
+
+.links a {
+	color: black;
+	text-decoration: none;
+}
+
+.links a:hover{
+	color: #666;
+}
+
+.control {
+	-webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   font-size: 3em;
+}
+
+.footer{
+	height: 15%;
+	width: 100%;
+	background-color: #3780b7;
+}
+
+h1 {
+	font-size: 2em;
+	color: #222;
 }

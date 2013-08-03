@@ -1,0 +1,26 @@
+.animate-enter, 
+.animate-leave { 
+   -webkit-transition:all ease-in-out 1.5s;
+   -moz-transition:all ease-in-out 1.5s;
+   -o-transition:all ease-in-out 1.5s;
+   transition:all ease-in-out 1.5s;
+   position: absolute;
+   display: inline-block;
+   clear: both;
+   height: 85%
+} 
+ 
+.animate-enter {
+   left: -100%;
+   top: 0;
+
+}
+.animate-enter.animate-enter-active {
+   left: 0;
+   top: 0;
+}
+ 
+.animate-leave {
+	top: 0;
+   left: 100%;
+}
