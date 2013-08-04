@@ -197,6 +197,7 @@ DEPENDENCIES
   haml_coffee_assets
   jquery-rails
   mongoid
+  nokogiri
   pry-rails
   rails (= 3.2.13)
   rb-fsevent

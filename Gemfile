@@ -10,6 +10,7 @@ gem 'bson_ext'
 gem "font-awesome-rails"
 gem 'haml_coffee_assets'
 gem 'execjs'
+gem "nokogiri"
 
 gem "haml", "~> 4.0.2"
 
