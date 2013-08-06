@@ -1,5 +1,9 @@
 Portfolio::Application.routes.draw do
 
+  namespace :api do
+    resources :stats
+  end
+
   match '*anything' => "static#start"
   root :to => "static#start"
   
