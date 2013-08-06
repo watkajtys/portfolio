@@ -1,22 +1,22 @@
 @portfolio.controller "HomeController", ($scope, $http, $window) ->
 
-	$scope.positionData = "home"
+	$scope.positionData = { position: "home", color: "#db6549" }
 	console.log $scope.positionData
 
-	$scope.about = ->
-		$scope.positionData = "about"
+	$scope.home = -> 
+		$scope.positionData = { position: "home", color: "#db6549" }
 		console.log $scope.positionData
 
-	$scope.home = -> 
-		$scope.positionData = "home"
+	$scope.about = ->
+		$scope.positionData = { position: "about", color: "#3a93a8" }
 		console.log $scope.positionData
 
 	$scope.portfolio = ->
-		$scope.positionData = "portfolio"
+		$scope.positionData = { position: "portfolio", color: "#756f5e" }
 		console.log $scope.positionData
 
 	$scope.links = -> 
-		$scope.positionData = "links"
+		$scope.positionData = { position: "links", color: "#56b2e0" }
 		console.log $scope.positionData
 
 	$scope.date = Date.now()

@@ -3,8 +3,8 @@
 	height: 100%;
 }
 
-.content{
-	height: 85%;
+.content {
+	height: 90%;
 	width: 100%;
 	display: inline-block;
 	position: relative;
@@ -12,7 +12,7 @@
 
 .home {
 	position: absolute;
-	background-color: #25567b;
+	background-color: #49BFDB;
 	height: 100%;
 	width: 100%;
 	clear: both;
@@ -21,7 +21,7 @@
 
 .about {
 	position: absolute;
-	background-color: #257b4a;
+	background-color: #A84F3A;
 	height: 100%;
 	width: 100%;
 	clear: both;
@@ -30,23 +30,52 @@
 
 .portfolio {
 	position: absolute;
-	background-color: #7b2556;
+	background-color: #5E6475;
 	height: 100%;
 	width: 100%;
 	clear: both;
 	display: inline-block;
+}
+
+.portfolio .copy {
+	height: 10%;
+}
+
+.folio_container {
+	height: 50%;
+	overflow: scroll;
+}
+
+.folio_items {
+	height: 60%;
+	overflow: auto;
 }
 
 .links {
 	position: absolute;
-	background-color: orange;
+	background-color: #E08456;
 	height: 100%;
 	width: 100%;
 	clear: both;
 	display: inline-block;
 }
 
-.links i {
+.copy {
+	padding: 5%;
+}
+
+.control {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+.copy h2 {
+	font-size: 2em;
+	color: #222;
+}
+
+.links .external {
 	font-size: 14em;
 }
 
@@ -70,12 +99,17 @@
 }
 
 .footer{
-	height: 15%;
+	height: 10%;
 	width: 100%;
 	background-color: #3780b7;
+	-webkit-transition:background-color ease-in-out 1.5s;
+   -moz-transition:background-color ease-in-out 1.5s;
+   -o-transition:background-color ease-in-out 1.5s;
+   transition:background-color ease-in-out 1.5s;
 }
 
 h1 {
-	font-size: 2em;
-	color: #222;
+	font-size: 3em;
+	color: #111;
+	font-weight: bolder;
 }
